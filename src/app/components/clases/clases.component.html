@@ -1,0 +1,19 @@
+<div [ngClass]="alerta" class="alert" role="alert">
+    A simple alert—check it out!
+</div>
+
+<button type="button" class="btn btn-outline-primary" (click)="alerta = 'alert-primary' ">Primary</button>
+<button type="button" class="btn btn-outline-secondary" (click)="alerta = 'alert-secondary' ">Secondary</button>
+<button type="button" class="btn btn-outline-success" (click)="alerta = 'alert-success' ">Success</button>
+<button type="button" class="btn btn-outline-danger" (click)="alerta = 'alert-danger' ">Danger</button>
+<button type="button" class="btn btn-outline-warning" (click)="alerta = 'alert-warning' ">Warning</button>
+<button type="button" class="btn btn-outline-info" (click)="alerta = 'alert-info' ">Info</button>
+<button type="button" class="btn btn-outline-light" (click)="alerta = 'alert-light' ">Light</button>
+<button type="button" class="btn btn-outline-dark" (click)="alerta = 'alert-dark' ">Dark</button>
+
+<br>
+<br>
+
+<h3 [ngClass]="{ 'text-danger' : propiedades.danger, 'text-info' : !propiedades.danger }">Hola Mundo</h3>
+
+<button [ngClass]="{ 'btn-outline-danger' : propiedades.danger, 'btn-outline-info' : !propiedades.danger }" type="button" class="btn" (click)="propiedades.danger = !propiedades.danger">Cambiar</button>
