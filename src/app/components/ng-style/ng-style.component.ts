@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
       Tamaño de fuente: {{tamanio}}
     </p>
 
-    <button class="btn btn-primary" (click)="aumentarFuente()">
-      <i class="fas fa-plus"></i>
-    </button>
-
     <button class="btn btn-primary" (click)="disminuirFuente()">
       <i class="fas fa-minus"></i>
+    </button>
+
+    <button class="btn btn-primary" (click)="aumentarFuente()">
+      <i class="fas fa-plus"></i>
     </button>
   `,
   styles: []
